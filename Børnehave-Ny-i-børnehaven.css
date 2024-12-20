@@ -1,0 +1,274 @@
+html {
+    font-size: 62.5%;;
+}
+
+.yellowmarker { /* Den gule markering ved navigationen på børnehavesiderne */
+    width: 240px;
+    height: 150px;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -40px;
+    z-index: 30;
+}
+
+div span a { /* Links i navigationen er sorte uden underline */
+    color: black;
+    text-decoration: none;
+}
+
+/* Den grønne baggrund */
+.background{
+    z-index: 20; /* Sætter den foran */
+    height: calc(820vh + 20px); /* Juster dette tal for at kontrollere højden */
+    background: url('../GALLERI/Ny_grøn_baggrund.png');
+    max-height: 870vh; /* Begræns højden */
+    overflow: hidden; /* Skjul overskydende indhold */
+    background-size: cover; /* Sikrer, at baggrunden dækker hele området */
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    margin-top: 2860px;
+}
+.text1left {
+ left: 10px;
+ z-index: 25;
+ margin-top: 80px;
+ width: fit-content;
+ position: relative; 
+ font-family: 'Baarzeitgeist', sans-serif; /* Brug Lato fonten */
+ font-weight: 300; /* Light vægt */
+ font-size: 5.5rem; /* Overskriftens størrelse */
+ color: #ffffff; /* Tekstfarve */
+}
+.textpageheader {
+    z-index: 25;
+    margin-top: -20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;  
+}
+
+.textpageheader h2 {
+    font-family: 'Baarzeitgeist', sans-serif; /* Brug Lato fonten */
+    font-weight: 300; /* Light vægt */
+    font-size: 5.5rem; /* Overskriftens størrelse */
+    color: #ffffff; /* Tekstfarve */
+}
+.textpageheader h4 {
+    font-family: 'Baarzeitgeist', sans-serif; /* Brug Lato fonten */
+    font-weight: 300; /* Light vægt */
+    font-size: 4.0rem; /* Overskriftens størrelse */
+    color: #211cc0; /* Tekstfarve */
+}
+.textpageheader h3 {
+    font-family: 'Baarzeitgeist', sans-serif; /* Brug Lato fonten */
+    font-weight: 300; /* Light vægt */
+    font-size: 4.0rem; /* Overskriftens størrelse */
+    color: #ff0000; /* Tekstfarve */
+}
+.textpageheader h5 {
+    font-family: 'Baarzeitgeist', sans-serif; /* Brug Lato fonten */
+    font-weight: 300; /* Light vægt */
+    font-size: 4.0rem; /* Overskriftens størrelse */
+    color: #078e1e; /* Tekstfarve */
+}
+.textbit {
+    z-index: 25;
+    margin-left:500px;
+} 
+
+.textbit p {
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif; /* Brug Lato fonten */
+    font-weight: 300; /* Light vægt */
+    font-size: 2.1rem; /* Tekststørrelse */
+    line-height: 1.8; /* Linjeafstand for bedre læsbarhed */
+    text-align: left; /* Venstrejusteret tekst */
+    max-width: 800px; /* Gør teksten smallere */
+    margin-right: auto;
+    margin-top: 10px;
+}
+/* Ændrer farven på links til grøn */
+a {
+    color: #006A53; /* Sætter tekstfarven på links til grøn */
+}
+ 
+/* Hvis du vil ændre farven på links, når de bliver hovret over (hover) */
+a:hover {
+    color: #004b3a; /* Skifter farven til en mørkere grøn, når du holder musen over linket */
+}
+.cta-container:hover {
+    transform: scale(1.05);
+}
+/* Call-to-action button container positioning for the new CTA */
+.new-cta-container {
+    position: absolute;
+    height: 90px;  /* Samme højde som den oprindelige knap */
+    margin-top: 37px;  /* Justeret afstand fra toppen */
+    right: 20px;  /* Justeret lidt til venstre (fjerner 0 til at flytte den lidt mod venstre) */
+    z-index: 30;  /* Sørger for, at knappen ligger øverst */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Mellemrum mellem knappen og eventuelle trekanter */
+}
+ 
+/* New CTA button styling */
+.new-cta-button {
+    font-family: 'BaarZeitgeist', sans-serif;
+    font-size: 1.3rem; /* Tekststørrelsen skal matche det på billedet */
+    font-weight: bold; /* Gør teksten fed (bold) */
+    padding: 10px 20px; /* Mindre padding for at gøre knappen mindre */
+ 
+    background-color: white; /* Hvid baggrund */
+    color: black; /* Sort tekst */
+    border: 2px solid #000; /* Sort kantlinje for kontrast */
+    border-radius: 30px; /* Ændrer radius for at gøre knappen rundere */
+    text-align: center; /* Sørg for, at teksten er centreret */
+    text-decoration: none; /* Fjern understregning på linket */
+    display: inline-block; /* Sørger for, at det fungerer som en knap */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Tilføj transform for hover-effekt */
+}
+ 
+/* Hover effect for new CTA button */
+.new-cta-button:hover {
+    transform: scale(1.05); /* Let forstørrelse ved hover */
+}
+ 
+/* Pilen i knappen */
+.new-cta-button::after {
+    content: '\2192'; /* Unicode for højre pil (→) */
+    margin-left: 10px; /* Afstand mellem tekst og pil */
+    font-size: 1.3rem; /* Samme størrelse som tekst */
+    vertical-align: middle; /* Sørg for, at pilen er i midten */
+    transform: rotate(-50deg); /* Roter pilen 45 grader for at pege op til højre */
+    display: inline-block; /* Sørger for, at pilen opfører sig som et inline element */
+    line-height: 1.3; /* Justerer linjehøjde for at centrere pilen bedre */
+    margin-top: -3px; /* Juster pilen lidt op */
+ 
+}
+ 
+/* Hover effect for new CTA button */
+.new-cta-button:hover {
+    transform: scale(1.05); /* Let forstørrelse ved hover */
+}
+ 
+ /* billeder*/
+ /* Container til billedet børn der løber */
+.image-container1 {
+    position: relative; /* Sørger for, at det absolut placerede billede forholder sig til denne container */
+    width: 100%;
+    height: 500px; /* Fast højde */
+    overflow: visible; /* Forhindrer billedet i at stikke udenfor */
+    z-index: 28;
+}
+
+/* Billede børn der løber  */
+.flytbillede1 {
+    position: absolute; /* Tillader fri placering */
+    top: 250px; /* Flytter billedet 50px ned fra toppen */
+    left: 700px; /* Flytter billedet 100px fra venstre */
+    width: 500px; /* Justér billedstørrelsen */
+    height: auto; /* Bevarer billedets proportioner */
+    border: 2px solid #333; /* Tilføjer en kant rundt om billedet */
+    border-radius: 10px; /* Let afrundede hjørner */}
+
+
+    
+    /* Container til billedet børn ved bord*/
+    .image-container2 {
+        position: relative; /* Sørger for, at det absolut placerede billede forholder sig til denne container */
+        width: 100%;
+        height: 500px; /* Fast højde */
+        overflow: visible; /* Forhindrer billedet i at stikke udenfor */
+        z-index: 28;
+    }
+    
+    /* Billede børn ved bord */
+    .flytbillede2 {
+        position: absolute; /* Tillader fri placering */
+        top: 1180px; /* Flytter billedet 50px ned fra toppen */
+        left: 900px; /* Flytter billedet 100px fra venstre */
+        width: 300px; /* Justér billedstørrelsen */
+        height: auto; /* Bevarer billedets proportioner */
+        border: 2px solid #333; /* Tilføjer en kant rundt om billedet */
+        border-radius: 10px; /* Let afrundede hjørner */}
+
+
+        /* Container til billedet børn leger i græs*/
+
+    .image-container3 {
+        position: relative; /* Sørger for, at det absolut placerede billede forholder sig til denne container */
+        width: 100%;
+        height: 500px; /* Fast højde */
+        overflow: visible; /* Forhindrer billedet i at stikke udenfor */
+        z-index: 28;
+    }
+    
+    /* Billede børn leger i græs */
+    .flytbillede3 {
+        position: absolute; /* Tillader fri placering */
+        top: 2280px; /* Flytter billedet 50px ned fra toppen */
+        left: 560px; /* Flytter billedet 100px fra venstre */
+        width: 560px; /* Justér billedstørrelsen */
+        height: auto; /* Bevarer billedets proportioner */
+        border: 2px solid #333; /* Tilføjer en kant rundt om billedet */
+        border-radius: 10px; /* Let afrundede hjørner */}
+
+        .image-container4 {
+            position: relative; /* Sørger for, at det absolut placerede billede forholder sig til denne container */
+            width: 100%;
+            height: 500px; /* Fast højde */
+            overflow: visible; /* Forhindrer billedet i at stikke udenfor */
+            z-index: 28;
+        }
+        
+        /* Billede børn leger i græs */
+        .flytbillede4 {
+            position: absolute; /* Tillader fri placering */
+            top: 1180px; /* Flytter billedet 50px ned fra toppen */
+            left: 500px; /* Flytter billedet 100px fra venstre */
+            width: 300px; /* Justér billedstørrelsen */
+            height: 77%; /* Bevarer billedets proportioner */
+            border: 2px solid #333; /* Tilføjer en kant rundt om billedet */
+            border-radius: 10px; /* Let afrundede hjørner */}
+
+            .image-container5 {
+                position: relative; /* Sørger for, at det absolut placerede billede forholder sig til denne container */
+                width: 100%;
+                height: 500px; /* Fast højde */
+                overflow: visible; /* Forhindrer billedet i at stikke udenfor */
+                z-index: 28;
+            }
+            
+            /* Billede børn der spiser */
+            .flytbillede5 {
+                position: absolute; /* Tillader fri placering */
+                top: 3750px; /* Flytter billedet 50px ned fra toppen */
+                left: 500px; /* Flytter billedet 100px fra venstre */
+                width: 500px; /* Justér billedstørrelsen */
+                height: 77%; /* Bevarer billedets proportioner */
+                border: 2px solid #333; /* Tilføjer en kant rundt om billedet */
+                border-radius: 10px; /* Let afrundede hjørner */}
+
+                .image-container6 {
+                    position: relative; /* Sørger for, at det absolut placerede billede forholder sig til denne container */
+                    width: 100%;
+                    height: 500px; /* Fast højde */
+                    overflow: visible; /* Forhindrer billedet i at stikke udenfor */
+                    z-index: 28;
+                }
+                
+                /* Billede børn der spiser */
+                .flytbillede6 {
+                    position: absolute; /* Tillader fri placering */
+                    top: 4750px; /* Flytter billedet 50px ned fra toppen */
+                    left: 500px; /* Flytter billedet 100px fra venstre */
+                    width: 500px; /* Justér billedstørrelsen */
+                    height: 77%; /* Bevarer billedets proportioner */
+                    border: 2px solid #333; /* Tilføjer en kant rundt om billedet */
+                    border-radius: 10px; /* Let afrundede hjørner */}

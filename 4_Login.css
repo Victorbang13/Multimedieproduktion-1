@@ -1,0 +1,185 @@
+/* Call-to-action button container positioning for the new CTA */
+.new-cta-container {
+    position: absolute;
+    height: 90px;  /* Samme højde som den oprindelige knap */
+    margin-top: 37px;  /* Justeret afstand fra toppen */
+    right: 20px;  /* Justeret lidt til venstre (fjerner 0 til at flytte den lidt mod venstre) */
+    z-index: 30;  /* Sørger for, at knappen ligger øverst */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Mellemrum mellem knappen og eventuelle trekanter */
+}
+
+/* New CTA button styling */
+.new-cta-button {
+    font-family: 'BaarZeitgeist', sans-serif;
+    font-size: 1.3rem; /* Tekststørrelsen skal matche det på billedet */
+    font-weight: bold; /* Gør teksten fed (bold) */
+    padding: 10px 20px; /* Mindre padding for at gøre knappen mindre */
+
+    background-color: white; /* Hvid baggrund */
+    color: #403F3F; /* Sort tekst */
+    border: 2px solid #002B7F; /* Sort kantlinje for kontrast */
+    border-radius: 30px; /* Ændrer radius for at gøre knappen rundere */
+    text-align: center; /* Sørg for, at teksten er centreret */
+    text-decoration: none; /* Fjern understregning på linket */
+    display: inline-block; /* Sørger for, at det fungerer som en knap */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Tilføj transform for hover-effekt */
+}
+
+/* Hover effect for new CTA button */
+.new-cta-button:hover {
+    transform: scale(1.05); /* Let forstørrelse ved hover */
+}
+
+/* Pilen i knappen */
+.new-cta-button::after {
+    content: '\2192'; /* Unicode for højre pil (→) */
+    margin-left: 10px; /* Afstand mellem tekst og pil */
+    font-size: 1.3rem; /* Samme størrelse som tekst */
+    vertical-align: middle; /* Sørg for, at pilen er i midten */
+    transform: rotate(-50deg); /* Roter pilen 45 grader for at pege op til højre */
+    display: inline-block; /* Sørger for, at pilen opfører sig som et inline element */
+    line-height: 1.8; /* Justerer linjehøjde for at centrere pilen bedre */
+    margin-top: -3px; /* Juster pilen lidt op */
+
+}
+
+/* Hover effect for new CTA button */
+.new-cta-button:hover {
+    transform: scale(1.05); /* Let forstørrelse ved hover */
+}
+
+/*CSS FOR LOGIN SIDEN*/
+.Login-section .about-header h2.Login-about-header {
+    font-family: 'BaarZeitgeist', sans-serif;
+    font-weight: 300;
+    font-size: 3.4rem;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    color: #403F3F;
+    text-align: center;
+}
+
+.Login-section .about-content {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-top: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;   /* Fjerner automatisk margin for at forhindre centrering */
+    margin-right: auto;  /* Fjerner automatisk margin for at forhindre centrering */
+
+}
+
+.Login-section {
+    background-color: #ffffff99; /* Hvid baggrund */
+    padding: 50px 20px; /* Indvendig margen */
+    margin: 0 auto; /* Centrerer sektionen */
+    max-width: 1000px; /* Begrænser bredden */
+}
+
+.Login-section .about-header h2.Login-about-header {
+    font-family: 'BaarZeitgeist', sans-serif;
+    font-size: 3.4rem;
+    text-align: center;
+    color: #403F3F;
+    margin-bottom: 20px;
+    
+}
+
+
+.download-link:hover {
+    text-decoration: underline;
+    color: #004b3a; /* Mørkere grøn ved hover */
+}
+
+.download-section p {
+    font-size: 2.1rem; /* Ens fontstørrelse for hele teksten */
+    font-family: 'Lato', sans-serif;
+    font-weight: normal; /* Normal vægt */
+
+    color: #333; /* Sikrer en konsistent farve */
+}
+
+.download-section a {
+    text-decoration: none; /* Fjern understregning på linket */
+    font-weight: normal; /* Normal vægt */
+    color: #006854; /* Grøn farve til link */
+    text-decoration: underline;
+}
+
+.download-section a:hover {
+    text-decoration: underline; /* Understregning ved hover */
+    color: #004b3a; /* Mørkere grøn ved hover */
+}
+
+.login-form {
+    margin: 30px auto;
+    padding: 50px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-form label {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.1rem;
+    color: #403F3F;
+    text-align: left;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 2.1rem;
+}
+
+.login-button {
+    background-color: #006A53; /* Grøn baggrund */
+    color: #ffffff99;
+    padding: 10px 20px;
+    font-size: 2.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #004b3a; /* Mørkere grøn */
+}
+
+.register-link {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.register-link a {
+    color: #006A53; /* grøn */
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+    color: #004b3a; /* Mørkere grøn */
+}
+
+
+
+.logo-container a {
+    display: block;  /* Sørg for, at a-tagget opfører sig som en blok (link) */
+    text-decoration: none; /* Fjern understregningen på linket */
+}
+
+.logo-container a:hover {
+    cursor: pointer;  /* Skift cursoren til en hånd for at indikere, at det er klikbart */
+}

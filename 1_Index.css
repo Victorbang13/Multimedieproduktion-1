@@ -1,0 +1,689 @@
+/* Header */
+header {
+    background-color: #ffffff99; /* Baggrundsfarve */
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centrer alt vandret */
+    padding: 5px 40px; /* Reducer padding */
+    height: 60px; /* Reducer højden på headeren */
+    z-index: 10;
+}
+
+/* Container til billederne */
+.top-images {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Fordel billederne jævnt */
+    align-items: center;
+    z-index: 1; /* Sørg for, at billederne er ovenpå */
+    margin-top: -20px; /* Flyt billederne op, hvis nødvendigt */
+}
+
+/* Container til billederne */
+.top-images {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Fordel billederne jævnt */
+    align-items: center;
+    z-index: 10; /* Sørg for, at billederne er ovenpå */
+    margin-top: -40px; /* Reducer pladsen i toppen */
+    opacity: 0.3; /* Gør billedet 50% gennemsigtigt */
+}
+
+/* Venstre billede af pigen med hatten */
+.image-left-hat {
+    position: relative;
+    margin-left: -85px; /* Juster afstand fra venstre */
+    bottom: -80px; /* Flyt billedet ned */
+    margin-top: -240px; /* Flyt billederne op, hvis nødvendigt */
+    transform: scale(-1, -1); /* Spejlvender billedet både lodret og vandret */
+    width: 130px; /* Indstil billedets bredde */
+    height: auto; /* Behold billedets proportioner */
+}
+
+/* Højre billede af drengen med hatten */
+.image-right-hat {
+    position: relative;
+    margin-right: -70px; /* Juster afstand fra højre */
+    bottom: -95px; /* Flyt billedet ned */
+    transform: scale(-1, -1) rotate(-15deg); /* Spejlvender billedet og roterer det */
+    margin-top: -240px; /* Flyt billederne op, hvis nødvendigt */
+    width: 95px; /* Indstil billedets bredde */
+    height: auto; /* Behold billedets proportioner */
+}
+
+/* Venstre billede i headeren pigen på hesten*/
+.image-left {
+    position: relative;
+    margin-left: 50px; /* Juster afstand fra venstre */
+    bottom: -40px; /* Flyt pigen med hesten ned*/
+    transform: rotate(-20deg); /* Roter billedet 15 grader med uret */
+    width: 160px; /* Indstil billedets bredde */
+    height: auto; /* Behold billedets proportioner */
+}
+
+/* Højre billede i headeren pigen den hopper i gult hår */
+.image-right {
+    position: relative;
+    margin-right: 25px; /* Juster afstand fra højre */
+    bottom: -50px; /* Flyt pigen med hesten ned*/
+    transform: scaleX(-1); /* Spejlvend billedet vandret */
+    width: 180px; /* Indstil billedets bredde */
+    height: auto; /* Behold billedets proportioner */
+}
+
+.nav-left {
+    justify-content: flex-end; /* Skub navigation til venstre tættere på logoet */
+    flex: 3;
+    z-index: 20; /* Højere end .top-images */
+}
+
+.nav-right {
+    justify-content: flex-start; /* Skub navigation til højre tættere på logoet */
+    flex: 3;
+    z-index: 20; /* Højere end .top-images */
+}
+
+/* Brush-style element with image */
+.header-brush {
+    background: url('../GALLERI/Grøn_Brush_Heyz.png') no-repeat center center;
+    background-size: cover; /* Strækker billedet over hele bredden */
+    height: 150px; /* Juster højden efter behov */
+    width: 100%; /* Strækker brush-elementet til hele bredden */
+    position: absolute; /* Sørg for, at den grønne brush forbliver på sin plads */
+    top: 50; /* Placer brush øverst */
+    bottom: -50x; /* Flyt brush-elementet længere ned */
+    left: 0; /* Sørger for, at det starter helt til venstre */
+    z-index: 10; /* Sørg for, at den står foran baggrundsbilledet */
+}
+
+.logo {
+    height: 130px;  /* Juster størrelsen af logoet */
+    margin: 0 auto; /* Centrer logoet */
+    display: block; /* Sikrer, at det centrerer med margin */
+    margin-bottom: 50px; /* Giver lidt luft mellem logoet og navigation */
+    position: relative;
+    top: -50px; /* Flyt logoet lidt op */
+    z-index: 50;
+}
+
+
+nav ul {
+    list-style: none; /* Fjern punkter fra listen */
+    display: flex; /* Sørger for at elementerne står på linje */
+    justify-content: center; /* Centrerer hele navigationen */
+    gap: 40px; /* Tilføjer mellemrum mellem linksene */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-icon {
+    margin-bottom: -15px; /* Tilføj lidt afstand mellem ikon og tekst */
+}
+
+.nav-icon img {
+    width: 30px; /* Ensartet størrelse for alle ikoner */
+    height: auto; /* Bevar proportionerne */
+}
+
+nav ul li {
+    margin: 0 20px; /* Juster værdien for at skabe mere eller mindre luft */
+    margin-top: -150px; /* Juster værdien for at flytte dem op */
+    display: flex;
+    flex-direction: column; /* Placer overskrift og underskrift i en kolonne */
+    align-items: center;    /* Centrerer dem vandret */
+    justify-content: center; /* Centrerer dem lodret */
+    gap: 10px; /* Tilføjer mellemrum mellem ikon og tekst */
+    line-height: 1.8;        /* Juster mellemrum mellem overskrift og underskrift */
+    text-align: center;      /* Centrer teksten */
+}
+
+/* Underskrift (nav-subtitle) styling */
+.nav-subtitle {
+    font-family: 'Lato', sans-serif; /* Sørg for at bruge Lato */
+    font-weight: 100;                /* Hairline vægt */
+    font-size: 1.3rem;                /* Mindre tekststørrelse */
+    color: #403F3F;                     /* Eventuel lysere tekstfarve */
+    text-align: center;              /* Centrer teksten */
+    letter-spacing: 0.1rem;           /* Giver lidt luft mellem bogstaver */
+    margin-top: 5px;                 /* Lidt luft mellem overskrift og underskrift */
+    text-transform: none;            /* Behold små bogstaver */
+    display: block;                  /* Sørg for, at underskriften fylder sin egen linje */
+    margin-top: -3px;
+}
+
+.nav-title:hover {
+    color: #006854; /* Grøn hoverfarve */
+    cursor: pointer;
+}
+
+/* Overskrift (nav-title) styling */
+.nav-title {
+    font-family: 'Lato', sans-serif; /* Typografi Lato */
+    font-weight: bold;              /* Medium vægt */
+    font-size: 1.3rem;               /* Juster størrelsen efter behov */
+    color: #403F3F;                 /* Farve */
+    text-decoration: none;          /* Fjern understregning */
+    text-align: center;             /* Centrer tekst */
+    margin-top: 7px;                /* Giver lidt luft over teksten */
+    letter-spacing: 0.1rem;          /* Giver lidt luft mellem bogstaver */
+    display: inline-block;                 /* Sørg for, at overskriften fylder sin egen linje */
+    transition: color 0.3s ease;    /* Smidig overgang ved hover */
+    cursor: pointer;                /* Gør det tydeligt, at det er klikbart */
+    z-index: 10;
+}
+
+/* Hover-effekt for de klikbare overskrifter */
+.nav-title:hover {
+    color: #006854; /* Grøn hoverfarve */
+    text-decoration: none; /* Sørg for, at der ikke er understregning */
+    transform: scale(1.1); /* Gør teksten 10% større */
+    font-weight: bolder; /* Gør teksten tydeligere */
+   
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease; /* Glidende overgang */
+}
+
+.nav-subtitle a {
+    text-decoration: none; /* Fjern understregning fra links */
+    color: inherit;        /* Arver farve fra nav-subtitle */
+    transition: color 0.3s ease; /* Smidig overgang ved hover */
+}
+
+/* Tilføj hover-effekt også til forældrelementet (a) */
+nav ul li a:hover {
+    color: #006854; /* Grøn hoverfarve */
+    text-decoration: none; /* Ingen understregning */
+}
+
+
+/* Call-to-action button container positioning for the new CTA */
+.new-cta-container {
+    position: absolute;
+    height: 90px;  /* Samme højde som den oprindelige knap */
+    margin-top: 37px;  /* Justeret afstand fra toppen */
+    right: 20px;  /* Justeret lidt til venstre (fjerner 0 til at flytte den lidt mod venstre) */
+    z-index: 30;  /* Sørger for, at knappen ligger øverst */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Mellemrum mellem knappen og eventuelle trekanter */
+}
+
+/* New CTA button styling */
+.new-cta-button {
+    font-family: 'BaarZeitgeist', sans-serif;
+    font-size: 1.3rem; /* Tekststørrelsen skal matche det på billedet */
+    font-weight: bold; /* Gør teksten fed (bold) */
+    padding: 10px 20px; /* Mindre padding for at gøre knappen mindre */
+
+    background-color: white; /* Hvid baggrund */
+    color: black; /* Sort tekst */
+    border: 2px solid #000; /* Sort kantlinje for kontrast */
+    border-radius: 30px; /* Ændrer radius for at gøre knappen rundere */
+    text-align: center; /* Sørg for, at teksten er centreret */
+    text-decoration: none; /* Fjern understregning på linket */
+    display: inline-block; /* Sørger for, at det fungerer som en knap */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Tilføj transform for hover-effekt */
+}
+
+/* Hover effect for new CTA button */
+.new-cta-button:hover {
+    transform: scale(1.05); /* Let forstørrelse ved hover */
+}
+
+/* Pilen i knappen */
+.new-cta-button::after {
+    content: '\2192'; /* Unicode for højre pil (→) */
+    margin-left: 10px; /* Afstand mellem tekst og pil */
+    font-size: 1.3rem; /* Samme størrelse som tekst */
+    vertical-align: middle; /* Sørg for, at pilen er i midten */
+    transform: rotate(-50deg); /* Roter pilen 45 grader for at pege op til højre */
+    display: inline-block; /* Sørger for, at pilen opfører sig som et inline element */
+    line-height: 1.8; /* Justerer linjehøjde for at centrere pilen bedre */
+    margin-top: -3px; /* Juster pilen lidt op */
+
+}
+
+/* Hover effect for new CTA button */
+.new-cta-button:hover {
+    transform: scale(1.05); /* Let forstørrelse ved hover */
+}
+
+
+
+
+
+html {
+    font-size: 62.5%;;
+}
+
+/* Begræns bredden på hele layoutet */
+body {
+    margin: 0;
+    padding: 0;
+    max-width: auto; /* Maksimal bredde for hele siden */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden; /* Forhindrer horisontal scroll */
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: 'BaarZeitgeist';
+    src: url('../FONTS/BaarZeitgeist-2EZo.ttf') format('truetype');
+}
+
+.about-section {
+    background-color: #ffffff99; /* Hvid baggrund */
+    padding: 50px 20px; /* Luft omkring sektionen */
+    text-align: center; /* Centrér indhold som helhed */
+    margin-top: -150px; /* Flyt sektionen op */
+    position:relative;
+}
+
+
+.about-header h2 {
+    font-family: 'BaarZeitgeist', sans-serif; /* Din font */
+    font-weight: 300; /* Light vægt */
+    font-size: 3.4rem; /* Overskriftens størrelse */
+    margin-bottom: 10px; /* Luft under overskriften */
+    color: #403F3F; /* Tekstfarve */
+    text-align: center; /* Centrér overskriften */
+}
+
+.about-header p {
+    font-family: 'Lato', sans-serif; /* Font */
+    font-size: 1.1rem; /* Tekststørrelse */
+    line-height: 1.5; /* Linjeafstand */
+    color: #403F3F; /* Tekstfarve */
+    margin-bottom: 15px; /* Luft under introduktionsteksten */
+    text-align: left; /* Teksten starter fra venstre */
+    max-width: 800px; /* Gør teksten smallere */
+    margin-left: auto;
+    margin-right: auto; /* Centrerer boksen */
+}
+
+.about-content {
+    font-family: 'Lato', sans-serif; /* Brug Lato fonten */
+    font-weight: 300; /* Light vægt */
+    font-size: 2.1rem; /* Tekststørrelse */
+    color: #403F3F; /* Tekstfarve */
+    line-height: 1.8; /* Linjeafstand for bedre læsbarhed */
+    margin-top: 10px; /* Luft over teksten */
+    margin-bottom: 60px; /* Luft under teksten */
+    text-align: left; /* Venstrejusteret tekst */
+    max-width: 1000px; /* Gør teksten smallere */
+    margin-left: auto;
+    margin-right: auto; /* Centrerer boksen */
+}
+
+.about-gallery {
+    display: grid; /* Brug grid-layout */
+    grid-template-columns: repeat(4, 1fr); /* Fire lige store kolonner */
+    gap: 20px; /* Mellemrum mellem billederne */
+    justify-content: center; /* Centrer galleriet */
+    margin: 30px auto; /* Skaber luft omkring galleriet */
+    margin-bottom: 5%; /* Reducer afstanden under billederne */
+    max-width: 1200px; /* Sørger for, at det holder sig inden for containeren */
+}
+
+.about-gallery img {
+    width: 100%; /* Fylder hele cellens bredde */
+    height: 300px; /* Sørg for, at billederne er firkantede */
+    object-fit: cover; /* Sikrer, at billederne bevarer deres proportioner inde i cellen */
+    border-radius: 0; /* Fjern afrundede hjørner */
+    border: 2px solid #006854; /* Tilføj sorte kanter */
+
+}
+.yellowmarker-fritidshjem { /* Den gule markering i headeren for fritidshjemssiderne*/
+    width: 130px;
+    position: absolute;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+/* Pigen med hatten i venstre hjørne */
+.image-bottom-left {
+    position: absolute;
+    bottom: 770px; /* Juster for at få billedet til at stikke ud */
+    left: -70px; /* Juster for at få billedet til at stikke ud */
+    width: 170px; /* Indstil bredden */
+    height: auto; /* Bevar proportionerne */
+    z-index: 10; /* Sørg for, at billedet vises over andre elementer */
+    transform: rotate(80deg); /* Roter billedet 15 grader mod uret */
+    opacity: 0.6; /* Gør billedet 50% gennemsigtigt */
+}
+
+
+/* Drengen med hatten i højre hjørne */
+.image-bottom-right {
+    position: absolute;
+    bottom: 470px; /* Juster for at få billedet til at stikke ud */
+    right: -20px; /* Juster for at få billedet til at stikke ud */
+    width: 120px; /* Indstil bredden */
+    height: auto; /* Bevar proportionerne */
+    z-index: 10; /* Sørg for, at billedet vises over andre elementer */
+    transform: rotate(-50deg); /* Roter billedet 15 grader mod uret */
+    opacity: 0.6; /* Gør billedet 50% gennemsigtigt */
+}
+
+
+
+
+/* Baggrunden på forsiden (enten behold attachtment eller fjern) */
+.hero {
+    position: relative;
+    height: 800px; /* Juster højden på baggrundsbilledet */
+    width: 100%;
+    background: url('../GALLERI/Kids_background_2.jpg') no-repeat center center;
+    background-size: cover;   
+    z-index: 1; /* Sørg for, at baggrundsbilledet er bag elementerne */
+    background-position: center center; /* Juster så billedet altid er centreret */
+    transition: background-image 1s ease-in-out; /* Smooth transition for all images */
+}
+
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.227); /* Giver en gennemsigtighed på 80% */
+    z-index: 0; /* Sørg for, at overlayet er bag de øvrige elementer */
+}
+
+/* Call-to-action button and triangles styling */
+.cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Mellemrum mellem knappen og trekanterne */
+    position: relative;
+    margin-top: 5px; /* Juster afstand til resten af indholdet */
+    transition: transform 0.5s ease-out;  /* Smooth transition for scale effect */
+
+}
+
+.cta-container:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in; /* Gør hover-effekten hurtigere */
+
+}
+ 
+.cta-button {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 15px 30px;
+    background-color: #006854;
+    color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    text-align: center; /* Sørg for, at teksten er centreret */
+    text-decoration: none; /* Fjern understregning på linket */
+    display: inline-block; /* Sørger for, at det fungerer som en knap */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.cta-button:hover {
+    background-color: #004f3e;
+}
+ 
+/* Container til trekanterne */
+.cta-triangles {
+    position: absolute;
+    top: -15px; /* Placerer trekanterne tættere på knappen */
+    right: -25px; /* Justerer placeringen mod knapens højre hjørne */
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Luft mellem trekanterne */
+}
+
+/* Styling for individuelle trekanter */
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 0; /* Gør trekanterne større */
+    border-color: #000000 transparent transparent transparent; /* Giver dem en grøn farve */
+    transform: rotate(45deg); /* Drej trekanten */
+}
+ 
+/* Sort kant omkring trekanten */
+.triangle::before {
+    content: '';
+    position: absolute;
+    top: -15px; /* Flyt kanten lidt op */
+    left: -3px; /* Flyt kanten lidt til venstre */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 17px 17px 0 0; /* Gør kanten større end trekanten */
+    border-color: #A32638 transparent transparent transparent; /* Sort farve til kanten */
+    z-index: -1; /* Sørger for, at kanten ligger bag trekanten */
+}
+ 
+/* Første trekant */
+.triangle:nth-child(1) {
+    position: relative;
+    top: 10px; /* Justerer den lodrette placering */
+    right: 30px; /* Justerer den vandrette placering */
+    transform: rotate(5deg); /* Roterer den første trekant */
+}
+ 
+/* Anden trekant */
+.triangle:nth-child(2) {
+    position: relative;
+    top: 1px; /* Justerer den lodrette placering */
+    right: 10px; /* Justerer den vandrette placering */
+    transform: rotate(30deg); /* Roterer den anden trekant */
+}
+ 
+/* Tredje trekant */
+.triangle:nth-child(3) {
+    position: relative;
+    top: 0px; /* Justerer den lodrette placering */
+    right: 0px; /* Justerer den vandrette placering */
+    transform: rotate(60deg); /* Roterer den tredje trekant */
+}
+ 
+.hero-overlay {
+    position: absolute;
+    top: 40%; /* Justér efter mockuppen */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Call-to-action button styling for <a> tag */
+.hero-overlay a.cta-button {
+    font-family: 'BaarZeitgeist', sans-serif; /* Brug den nye font (CALL TO ACTION KNAPPEN) */
+    font-size: 2.1rem;
+    font-weight: 500;
+    padding: 15px 30px;
+    background-color: #006854; /* Grøn farve */
+    color: #ffffff; /* Tekst i cta knappen */
+    border: 2px solid black; /* Sort kantlinje */
+    border-radius: 25px; /* Rundede hjørner */
+    cursor: pointer;  /* Gør den klikbar */
+    margin-top: 20px; /* Lidt afstand til overskriften */
+    display: inline-block; /* Sørger for, at det opfører sig som en knap */
+    text-align: center; /* Centrer tekst inde i knappen */
+    text-decoration: none; /* Fjern standard link-understregering */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Tilføj en blød hover-effekt */
+}
+ 
+.hero-overlay a.cta-button:hover {
+    background-color: #004f3e; /* Ændre baggrundsfarve på hover */
+}
+
+.colorful-text {
+    font-family: 'BaarZeitgeist', sans-serif; /* Din font */
+    font-size: 5.5rem; /* Størrelsen på teksten */
+    font-weight: bolder; /* Fed skrift */
+    text-align: center; /* Centrer teksten */
+    margin: 0 auto; /* Fjern unødig margen */
+    display: inline-block; /* Sikrer linjevisning */
+    letter-spacing: -0.1rem; /* Reducerer mellemrum mellem bogstaver */
+    text-shadow:
+    -1px -1px 0 #000, /* Sort stroke-effekt */
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px 0px 0 #000, /* Ekstra skygger for at gøre det tykkere */
+        0px 1px 0 #000,
+        -1px 0px 0 #000,
+        0px -1px 0 #000;
+        
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto; /* Juster efter behov */
+}
+
+.footer-brush {
+    width: 100%; /* Sørg for, at det fylder hele bredden */
+    height: 170px; /* Juster højden efter behov */
+    background: url('../GALLERI/Grøn_Brush_Heyz.png') no-repeat center bottom; /* Tilføj billedet */
+    background-size: cover; /* Sørg for, at billedet dækker området */
+    width: 100%; /* Sørger for, at bredden holder sig indenfor containerens grænser */
+    margin-top: 0px; /* Juster afstand over brush, hvis nødvendigt */
+    position: absolute; /* Sørg for, at den grønne brush forbliver på sin plads */
+    bottom: 50px; /* Flyt brush-elementet længere ned */
+    left: -10px; /* Flyt brush lidt til venstre */
+    z-index: 1;
+}
+
+footer {
+    padding: 50px 20px; /* Luft omkring footeren */
+    text-align: center; /* Centrér teksten */
+    margin-top: 50px; /* Luft over footeren */
+}
+
+.footer-content {
+    font-family: 'Lato', sans-serif; /* Font */
+    font-size: 0.9rem; /* Tekststørrelse */
+    color: #403F3F; /* Tekstfarve */
+    line-height: 1.8; /* Linjeafstand i footeren */
+}
+
+.footer-grass {
+    width: 100%; /* Fylder hele visningsområdet */
+    height: 170px; /* Juster højden efter behov */
+    background: url('../GALLERI/Fladt_græs_chatgpt.png') no-repeat center bottom; /* Placer græsset korrekt */
+    background-size: cover; /* Sørger for, at billedet strækkes uden beskæring */
+    position: relative; /* Sørg for, at græsset forholder sig til footeren */
+    margin: 0; /* Fjern margin */
+    padding: 0; /* Fjern padding */
+    margin-left: -20px; /* Flyt græsset lidt til venstre */
+    z-index: 1; /* Sørg for, at græsset vises korrekt i forhold til andre elementer */
+}
+
+/* Styling for "Kids redigeret" billedet */
+.kids-on-grass {
+    position: absolute; /* Sørger for, at billedet kan placeres præcist */
+    bottom: 145px; /* Justerer billedets afstand fra bunden */
+    left: 45%; /* Centrerer billedet horisontalt */
+    transform: translateX(-50%); /* Sørger for præcis centrering */
+    width: 550px; /* Juster størrelsen på billedet */
+    height: auto; /* Bevar billedets proportioner */
+    z-index: 10; /* Sørger for, at billedet vises over græsset */
+}
+
+.footer-clouds {    
+    position: relative; /* Sørg for, at græsset forholder sig til footeren */
+    width: 1400px;
+    margin-bottom: 60px;
+}
+
+.bottom-green-line {
+    width: 100%;
+    margin-left: -40px;
+    margin-top: -160px;  /* Juster afstanden fra teksten i body til den grønne brush */
+    margin-bottom: -60px;
+}
+
+/* Container til billederne i bunden */
+.bottom-images {
+    position: relative;
+    width: 100%; /* Fylder hele bredden */
+    height: 0; /* Ingen højde nødvendigt, da billederne er absolut positionerede */
+}
+
+/* Footer tekst */
+.footer-text {
+    display: flex; /* Brug flexbox til at arrangere kolonnerne */
+    justify-content: space-between; /* Fordel kolonnerne jævnt */
+    align-items: flex-start; /* Juster kolonnerne til at starte fra toppen */
+    font-family: 'Lato', sans-serif; /* Ensartet font */
+    font-weight: 100;
+    font-size: 1.3rem; /* Juster tekststørrelse */
+    color: #403F3F; /* Tekstfarve */
+    padding: 10px 20px; /* Reducér polstring over og under teksten */
+    margin-top: -45px; /* Reducér luft over footeren */
+    margin-bottom: -35px; /* Reducér luft under footeren */
+}
+ 
+/* Styling for hver kolonne */
+.footer-column {
+    flex: 1; /* Gør kolonnerne lige brede */
+    text-align: left; /* Venstrejuster teksten i kolonnen */
+    margin: 0 20px; /* Tilføj lidt luft mellem kolonnerne */
+}
+ 
+.footer-column .footerlink {
+    text-decoration: underline; /* Tilføjer understregning */
+    font-weight: bold; /* Gør teksten lidt tykkere */
+}
+ 
+/* Specifik styling for den midterste kolonne */
+.footer-column:nth-child(2) {
+    text-align: left; /* Venstrejuster teksten */
+    margin: 0 auto; /* Sørger for, at kolonnen forbliver centreret */
+    max-width: 300px; /* Begræns bredden for midterkolonnen */
+}
+ 
+/* Specifik styling for telefon og e-mail kolonne */
+.footer-column:last-child {
+    text-align: right; /* Venstrejuster teksten i denne kolonne */
+    margin-right: 50px;
+}
+ 
+/* Styling for teksten */
+.footer-column p {
+    margin: 10px 0; /* Lidt luft mellem linjerne */
+    line-height: 1.8; /* Forbedret læsbarhed */
+    position: relative;
+    z-index: 5; /* Sørg for, at teksten er synlig */
+}
+ 
+.footerlink {
+    color: #403F3F; /* Grøn farve */
+    text-decoration: none; /* Fjern standard understregning */
+    font-weight: bold; /* Fremhæv teksten */
+    z-index: 10;
+    transition: color 0.3s ease; /* Smidig overgang ved hover */
+    cursor: pointer; /* Markør for klikbare elementer */
+}
+ 
+.footerlink:hover {
+    color: #2f3030; /* Mørkere grøn ved hover */
+    text-decoration: underline; /* Understregning ved hover */
+}
+
+
+
+

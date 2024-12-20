@@ -1,0 +1,152 @@
+html {
+    font-size: 62.5%;;
+}
+
+/* Begræns bredden på hele layoutet */
+body {
+    margin: 0;
+    padding: 0;
+    max-width: auto; /* Maksimal bredde for hele siden */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden; /* Forhindrer horisontal scroll */
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: 'BaarZeitgeist';
+    src: url('../FONTS/BaarZeitgeist-2EZo.ttf') format('truetype');
+}
+
+h2 {
+    font-family: 'Baarzeitgeist', sans-serif; /* Brug Lato fonten */
+    font-weight: 300; /* Light vægt */
+    font-size: 5.5rem; /* Overskriftens størrelse */
+    margin-bottom: 10px; /* Luft under overskriften */
+    color: #403F3F; /* Tekstfarve */
+    text-align: center; /* Centrér overskriften */
+}
+
+.about-section {
+    background-color: #fff; /* Hvid baggrund */
+    padding: 50px 20px; /* Luft omkring sektionen */
+    text-align: center; /* Centrér indhold som helhed */
+    margin-top: -20px; /* Flyt sektionen op */
+    position:relative;
+}
+
+.about-header h2 {
+    font-family: 'Baarzeitgeist', sans-serif; /* Brug Lato fonten */
+    font-weight: 300; /* Light vægt */
+    font-size: 5.5rem; /* Overskriftens størrelse */
+    margin-bottom: 10px; /* Luft under overskriften */
+    color: #403F3F; /* Tekstfarve */
+    text-align: center; /* Centrér overskriften */
+}
+
+.about-header p {
+    font-family: 'Lato', sans-serif; /* Font */
+    font-size: 1.1rem; /* Tekststørrelse */
+    line-height: 1.5; /* Linjeafstand */
+    color: #403F3F; /* Tekstfarve */
+    margin-bottom: 15px; /* Luft under introduktionsteksten */
+    text-align: left; /* Teksten starter fra venstre */
+    max-width: 800px; /* Gør teksten smallere */
+    margin-left: auto;
+    margin-right: auto; /* Centrerer boksen */
+}
+
+.about-content {
+    font-family: 'Lato', sans-serif; /* Brug Lato fonten */
+    font-weight: 300; /* Light vægt */
+    font-size: 2.1rem; /* Tekststørrelse */
+    color: #403F3F; /* Tekstfarve */
+    line-height: 1.8; /* Linjeafstand for bedre læsbarhed */
+    margin-top: 10px; /* Luft over teksten */
+    margin-bottom: 60px; /* Luft under teksten */
+    text-align: left; /* Venstrejusteret tekst */
+    max-width: 1000px; /* Gør teksten smallere */
+    margin-left: auto;
+    margin-right: auto; /* Centrerer boksen */
+}
+
+.about-gallery {
+    display: grid; /* Brug grid-layout */
+    grid-template-columns: repeat(4, 1fr); /* Fire lige store kolonner */
+    gap: 20px; /* Mellemrum mellem billederne */
+    justify-content: center; /* Centrer galleriet */
+    margin: 30px auto; /* Skaber luft omkring galleriet */
+    margin-bottom: 5px; /* Reducer afstanden under billederne */
+    max-width: 1200px; /* Sørger for, at det holder sig inden for containeren */
+}
+
+.about-gallery img {
+    width: 100%; /* Fylder hele cellens bredde */
+    height: 300px; /* Sørg for, at billederne er firkantede */
+    object-fit: cover; /* Sikrer, at billederne bevarer deres proportioner inde i cellen */
+    border-radius: 0; /* Fjern afrundede hjørner */
+    border: 2px solid #006854; /* Tilføj sorte kanter */
+}
+
+/* Pigen med hatten i venstre hjørne */
+.image-bottom-left {
+    position: absolute;
+    bottom: 650px; /* Juster for at få billedet til at stikke ud */
+    left: -70px; /* Juster for at få billedet til at stikke ud */
+    width: 170px; /* Indstil bredden */
+    height: auto; /* Bevar proportionerne */
+    z-index: 50; /* Sørg for, at billedet vises over andre elementer */
+    transform: rotate(80deg); /* Roter billedet 15 grader mod uret */
+    opacity: 0.8; /* Gør billedet 50% gennemsigtigt */
+}
+
+/* Drengen med hatten i højre hjørne */
+.image-bottom-right {
+    position: absolute;
+    bottom: 380px; /* Juster for at få billedet til at stikke ud */
+    right: -20px; /* Juster for at få billedet til at stikke ud */
+    width: 120px; /* Indstil bredden */
+    height: auto; /* Bevar proportionerne */
+    z-index: 50; /* Sørg for, at billedet vises over andre elementer */
+    transform: rotate(-50deg); /* Roter billedet 15 grader mod uret */
+    opacity: 0.8; /* Gør billedet 50% gennemsigtigt */
+}
+
+.custom-box {
+    position: absolute; /* Placerer boksen relativt til nærmeste relative container */
+    top: 60%; /* Placerer boksen 55% ned fra toppen af det grønne felt */
+    left: 15%; /* Placerer boksen 15% ind fra venstre */
+    transform: translate(-50%, -50%); /* Centrerer boksen ved dens midte */
+    width: 300px; /* Fast bredde på boksen */
+    height: auto; /* Tilpasser højden til teksten */
+    padding: 20px; /* Indvendig afstand */
+    background-color: #ffffff; /* Hvid baggrund */
+    border: 5px solid #FFC61E; /* Gul kant */
+    border-radius: 25px; /* Afrundede hjørner */
+    color: #000000; /* Tekstfarve */
+    font-family: 'Lato', sans-serif; /* Skrifttype */
+    font-size: 2.1rem; /* Skriftstørrelse */
+    text-align: left; /* Centrer tekst */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Tilføj skygge */
+    line-height: 3;
+    z-index: 50; /* Sørger for, at boksen ligger over andre elementer */
+}
+
+.custom-box span {
+    position: relative;
+    z-index: 40;
+}
+
+/* Tilmeldingssiden - Pigen med hatten i venstre hjørne */
+.tilmelding-hero-left {
+    position: absolute;
+    bottom: 100px; /* Juster for at få billedet til at stikke ud */
+    left: -70px; /* Juster for at få billedet til at stikke ud */
+    width: 170px; /* Indstil bredden */
+    height: auto; /* Bevar proportionerne */
+    z-index: 10; /* Sørg for, at billedet vises over andre elementer */
+    transform: rotate(80deg); /* Roter billedet 15 grader mod uret */
+    opacity: 0.8; /* Gør billedet 50% gennemsigtigt */
+}

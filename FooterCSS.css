@@ -1,0 +1,101 @@
+html {
+    font-size: 62.5%;;
+}
+
+footer {
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center; /* Centrér teksten */
+    margin-top: 50px; /* Luft over footeren */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto; /* Juster efter behov */
+}
+
+.footer-content {
+    font-family: 'Lato', sans-serif; /* Font */
+    font-size: 0.9rem; /* Tekststørrelse */
+    color: #403F3F; /* Tekstfarve */
+    line-height: 1.5; /* Linjeafstand i footeren */
+}
+
+.footer-clouds {    
+    position: relative; /* Sørg for, at græsset forholder sig til footeren */
+    width: 1400px;
+    margin-bottom: 60px;
+}
+
+.bottom-green-line { /* Green brush over the clouds */
+    width: 100%;
+    margin-left: -40px;
+    margin-bottom: -60px;
+}
+
+/* Container til billederne i bunden */
+.bottom-images {
+    position: relative;
+    width: 100%; /* Fylder hele bredden */
+    height: 0; /* Ingen højde nødvendigt, da billederne er absolut positionerede */
+}
+
+/* Footer tekst */
+.footer-text {
+    display: flex; /* Brug flexbox til at arrangere kolonnerne */
+    justify-content: space-between; /* Fordel kolonnerne jævnt */
+    align-items: flex-start; /* Juster kolonnerne til at starte fra toppen */
+    font-family: 'Lato', sans-serif; /* Ensartet font */
+    font-weight: 100;
+    font-size: 1.3rem; /* Juster tekststørrelse */
+    color: #403F3F; /* Tekstfarve */
+    padding: 10px 20px; /* Reducér polstring over og under teksten */
+    margin-top: -45px; /* Reducér luft over footeren */
+    margin-bottom: -35px; /* Reducér luft under footeren */
+}
+ 
+/* Styling for hver kolonne */
+.footer-column {
+    flex: 1; /* Gør kolonnerne lige brede */
+    text-align: left; /* Venstrejuster teksten i kolonnen */
+    margin: 0 20px; /* Tilføj lidt luft mellem kolonnerne */
+}
+ 
+.footer-column .footerlink {
+    text-decoration: underline; /* Tilføjer understregning */
+    font-weight: bold; /* Gør teksten lidt tykkere */
+}
+ 
+/* Specifik styling for den midterste kolonne */
+.footer-column:nth-child(2) {
+    text-align: left; /* Venstrejuster teksten */
+    margin: 0 auto; /* Sørger for, at kolonnen forbliver centreret */
+    max-width: 300px; /* Begræns bredden for midterkolonnen */
+}
+ 
+/* Specifik styling for telefon og e-mail kolonne */
+.footer-column:last-child {
+    text-align: right; /* Venstrejuster teksten i denne kolonne */
+    margin-right: 50px;
+}
+ 
+/* Styling for teksten */
+.footer-column p {
+    margin: 10px 0; /* Lidt luft mellem linjerne */
+    line-height: 1.5; /* Forbedret læsbarhed */
+    position: relative;
+    z-index: 5; /* Sørg for, at teksten er synlig */
+}
+ 
+.footerlink {
+    color: #403F3F; /* Grøn farve */
+    text-decoration: none; /* Fjern standard understregning */
+    font-weight: bold; /* Fremhæv teksten */
+    z-index: 10;
+    transition: color 0.3s ease; /* Smidig overgang ved hover */
+    cursor: pointer; /* Markør for klikbare elementer */
+}
+ 
+.footerlink:hover {
+    color: #2f3030; /* Mørkere grøn ved hover */
+    text-decoration: underline; /* Understregning ved hover */
+}

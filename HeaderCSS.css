@@ -1,0 +1,217 @@
+html {
+    font-size: 62.5%;;
+}
+
+/* Header */
+header {
+    background-color: #ffffff; /* Baggrundsfarve */
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centrer alt vandret */
+    padding: 5px 40px; /* Reducer padding */
+    height: 60px; /* Reducer højden på headeren */
+    z-index: 10;
+}
+
+/* Container til billederne */
+.top-images {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Fordel billederne jævnt */
+    align-items: center;
+    z-index: 20; /* Sørg for, at billederne er ovenpå */
+    margin-top: -20px; /* Flyt billederne op, hvis nødvendigt */
+}
+
+/* Container til billederne */
+.top-images {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Fordel billederne jævnt */
+    align-items: center;
+    z-index: 20; /* Sørg for, at billederne er ovenpå */
+    margin-top: -40px; /* Reducer pladsen i toppen */
+    opacity: 0.3; /* Gør billedet 50% gennemsigtigt */
+}
+
+/* Venstre billede af pigen med hatten */
+.image-left-hat {
+    position: relative;
+    margin-left: -85px; /* Juster afstand fra venstre */
+    bottom: -80px; /* Flyt billedet ned */
+    margin-top: -240px; /* Flyt billederne op, hvis nødvendigt */
+    transform: scale(-1, -1); /* Spejlvender billedet både lodret og vandret */
+    width: 130px; /* Indstil billedets bredde */
+    height: auto; /* Behold billedets proportioner */
+}
+
+/* Højre billede af drengen med hatten */
+.image-right-hat {
+    position: relative;
+    margin-right: -70px; /* Juster afstand fra højre */
+    bottom: -95px; /* Flyt billedet ned */
+    transform: scale(-1, -1) rotate(-15deg); /* Spejlvender billedet og roterer det */
+    margin-top: -240px; /* Flyt billederne op, hvis nødvendigt */
+    width: 95px; /* Indstil billedets bredde */
+    height: auto; /* Behold billedets proportioner */
+}
+
+/* Venstre billede i headeren pigen på hesten*/
+.image-left {
+    position: relative;
+    margin-left: 50px; /* Juster afstand fra venstre */
+    bottom: -40px; /* Flyt pigen med hesten ned*/
+    transform: rotate(-20deg); /* Roter billedet 15 grader med uret */
+    width: 160px; /* Indstil billedets bredde */
+    height: auto; /* Behold billedets proportioner */
+}
+
+/* Højre billede i headeren pigen den hopper i gult hår */
+.image-right {
+    position: relative;
+    margin-right: 25px; /* Juster afstand fra højre */
+    bottom: -50px; /* Flyt pigen med hesten ned*/
+    transform: scaleX(-1); /* Spejlvend billedet vandret */
+    width: 180px; /* Indstil billedets bredde */
+    height: auto; /* Behold billedets proportioner */
+}
+
+.nav-left {
+    justify-content: flex-end; /* Skub navigation til venstre tættere på logoet */
+    flex: 3;
+    z-index: 20; /* Højere end .top-images */
+}
+
+.nav-right {
+    justify-content: flex-start; /* Skub navigation til højre tættere på logoet */
+    flex: 3;
+    z-index: 20; /* Højere end .top-images */
+}
+
+/* Brush-style element with image */
+.header-brush {
+    background: url('../GALLERI/Grøn_Brush_Heyz.png') no-repeat center center;
+    background-size: cover; /* Strækker billedet over hele bredden */
+    height: 150px; /* Juster højden efter behov */
+    width: 100%; /* Strækker brush-elementet til hele bredden */
+    position: absolute; /* Sørg for, at den grønne brush forbliver på sin plads */
+    top: 50; /* Placer brush øverst */
+    bottom: -50x; /* Flyt brush-elementet længere ned */
+    left: 0; /* Sørger for, at det starter helt til venstre */
+    z-index: 20; /* Sørg for, at den står foran baggrundsbilledet */
+}
+
+.logo {
+    height: 130px;  /* Juster størrelsen af logoet */
+    margin: 0 auto; /* Centrer logoet */
+    display: block; /* Sikrer, at det centrerer med margin */
+    margin-bottom: 50px; /* Giver lidt luft mellem logoet og navigation */
+    position: relative;
+    top: -50px; /* Flyt logoet lidt op */
+    z-index: 60;
+}
+
+nav ul {
+    list-style: none; /* Fjern punkter fra listen */
+    display: flex; /* Sørger for at elementerne står på linje */
+    justify-content: center; /* Centrerer hele navigationen */
+    gap: 40px; /* Tilføjer mellemrum mellem linksene */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-icon {
+    margin-bottom: -15px; /* Tilføj lidt afstand mellem ikon og tekst */
+}
+
+.nav-icon img {
+    width: 30px; /* Ensartet størrelse for alle ikoner */
+    height: auto; /* Bevar proportionerne */
+}
+
+nav ul li {
+    margin: 0 20px; /* Juster værdien for at skabe mere eller mindre luft */
+    margin-top: -150px; /* Juster værdien for at flytte dem op */
+    display: flex;
+    flex-direction: column; /* Placer overskrift og underskrift i en kolonne */
+    align-items: center;    /* Centrerer dem vandret */
+    justify-content: center; /* Centrerer dem lodret */
+    gap: 10px; /* Tilføjer mellemrum mellem ikon og tekst */
+    line-height: 1.2;        /* Juster mellemrum mellem overskrift og underskrift */
+    text-align: center;      /* Centrer teksten */
+}
+
+/* Underskrift (nav-subtitle) styling */
+.nav-subtitle {
+    font-family: 'Lato', sans-serif; /* Sørg for at bruge Lato */
+    font-weight: 100;                /* Hairline vægt */
+    font-size: 1.3rem;                /* Mindre tekststørrelse */
+    color: #666;                     /* Eventuel lysere tekstfarve */
+    text-align: center;              /* Centrer teksten */
+    letter-spacing: 0.1rem;           /* Giver lidt luft mellem bogstaver */
+    margin-top: 5px;                 /* Lidt luft mellem overskrift og underskrift */
+    text-transform: none;            /* Behold små bogstaver */
+    display: block;                  /* Sørg for, at underskriften fylder sin egen linje */
+    margin-top: -3px;
+}
+
+.nav-title:hover {
+    color: #006854; /* Grøn hoverfarve */
+    cursor: pointer;
+}
+
+/* Overskrift (nav-title) styling */
+.nav-title {
+    font-family: 'Lato', sans-serif; /* Typografi Lato */
+    font-weight: bold;              /* Medium vægt */
+    font-size: 1.3rem;               /* Juster størrelsen efter behov */
+    color: #403F3F;                 /* Farve */
+    text-decoration: none;          /* Fjern understregning */
+    text-align: center;             /* Centrer tekst */
+    margin-top: 7px;                /* Giver lidt luft over teksten */
+    letter-spacing: 0.1rem;          /* Giver lidt luft mellem bogstaver */
+    display: inline-block;                 /* Sørg for, at overskriften fylder sin egen linje */
+    transition: color 0.3s ease;    /* Smidig overgang ved hover */
+    cursor: pointer;                /* Gør det tydeligt, at det er klikbart */
+    z-index: 20;
+}
+
+/* Hover-effekt for de klikbare overskrifter */
+.nav-title:hover {
+    color: #006854; /* Grøn hoverfarve */
+    text-decoration: none; /* Sørg for, at der ikke er understregning */
+    transform: scale(1.1); /* Gør teksten 10% større */
+    font-weight: bolder; /* Gør teksten tydeligere */
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease; /* Glidende overgang */
+}
+
+.nav-subtitle a {
+    text-decoration: none; /* Fjern understregning fra links */
+    color: inherit;        /* Arver farve fra nav-subtitle */
+    transition: color 0.3s ease; /* Smidig overgang ved hover */
+}
+
+/* Tilføj hover-effekt også til forældrelementet (a) */
+nav ul li a:hover {
+    color: #006854; /* Grøn hoverfarve */
+    text-decoration: none; /* Ingen understregning */
+}
+
+.log-ind {
+    position: absolute;
+    height: 90px;
+    margin-top: 37px;
+    right: 0;
+    z-index: 30;
+}
+
+.yellowmarker-fritidshjem { /* Den gule markering i headeren for fritidshjemssiderne*/
+    width: 130px;
+    position: absolute;
+    margin-top: 15px;
+    margin-right: 10px;
+}

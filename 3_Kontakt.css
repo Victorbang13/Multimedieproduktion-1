@@ -1,0 +1,182 @@
+/*CSS FOR KONTAKT*/
+.yellowmarker { /* Den gule markering ved navigationen på børnehavesiderne */
+    width: 270px;
+    height: 150px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -45px;
+    z-index: 20;
+}
+
+/* Kontakt - Pigen med hatten i venstre hjørne */
+.kontakt-hero-left {
+    position: absolute;
+    bottom: 100px; /* Juster for at få billedet til at stikke ud */
+    left: -70px; /* Juster for at få billedet til at stikke ud */
+    width: 170px; /* Indstil bredden */
+    height: auto; /* Bevar proportionerne */
+    z-index: 10; /* Sørg for, at billedet vises over andre elementer */
+    transform: rotate(80deg); /* Roter billedet 15 grader mod uret */
+    opacity: 0.6; /* Gør billedet 50% gennemsigtigt */
+}
+ 
+/* Drengen med hatten i højre hjørne */
+.kontakt-hero-right {
+    position: absolute;
+    bottom: 300px; /* Juster for at få billedet til at stikke ud */
+    right: -20px; /* Juster for at få billedet til at stikke ud */
+    width: 120px; /* Indstil bredden */
+    height: auto; /* Bevar proportionerne */
+    z-index: 10; /* Sørg for, at billedet vises over andre elementer */
+    transform: rotate(-50deg); /* Roter billedet 15 grader mod uret */
+    opacity: 0.6; /* Gør billedet 50% gennemsigtigt */
+}
+ 
+/* Ekstra billeder - Drengen med hatten */
+.kontakt-hero-left-extra {
+    position: absolute;
+    bottom: -270px; /* Juster for at få billedet til at stikke ud */
+    left: -20px; /* Juster for at få billedet til at stikke ud */
+    width: 120px; /* Indstil bredden */
+    height: auto; /* Bevar proportionerne */
+    z-index: 10; /* Sørg for, at billedet vises over andre elementer */
+    transform: rotate(80deg) scaleX(-1); /* Roter billedet 80 grader og spejlvend det vandret */
+    opacity: 0.6; /* Gør billedet 50% gennemsigtigt */
+}
+ 
+/* Ekstra billeder - Pigen med hatten */
+.kontakt-hero-right-extra {
+    position: absolute;
+    bottom: -170px; /* Juster for at få billedet til at stikke ud */
+    right: -70px;  /* Juster for at få billedet til at stikke ud til højre */
+    width: 170px;  /* Indstil bredden */
+    height: auto;  /* Bevar proportionerne */
+    z-index: 10;    /* Sørg for, at billedet vises bag de første billeder */
+    transform: rotate(-80deg) scaleX(-1); /* Roter billedet 80 grader og spejlvend det vandret */
+    opacity: 0.6;  /* Gør billedet lidt gennemsigtigt */
+}
+ 
+ 
+/* Call-to-action button container positioning for the new CTA */
+.new-cta-container {
+    position: absolute;
+    height: 90px;  /* Samme højde som den oprindelige knap */
+    margin-top: 37px;  /* Justeret afstand fra toppen */
+    right: 20px;  /* Justeret lidt til venstre (fjerner 0 til at flytte den lidt mod venstre) */
+    z-index: 30;  /* Sørger for, at knappen ligger øverst */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Mellemrum mellem knappen og eventuelle trekanter */
+}
+ 
+/* New CTA button styling */
+.new-cta-button {
+    font-family: 'BaarZeitgeist', sans-serif;
+    font-size: 1.3rem; /* Tekststørrelsen skal matche det på billedet */
+    font-weight: bold; /* Gør teksten fed (bold) */
+    padding: 10px 20px; /* Mindre padding for at gøre knappen mindre */
+ 
+    background-color: #ffffff99; /* Hvid baggrund */
+    color: black; /* Sort tekst */
+    border: 2px solid #000; /* Sort kantlinje for kontrast */
+    border-radius: 30px; /* Ændrer radius for at gøre knappen rundere */
+    text-align: center; /* Sørg for, at teksten er centreret */
+    text-decoration: none; /* Fjern understregning på linket */
+    display: inline-block; /* Sørger for, at det fungerer som en knap */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Tilføj transform for hover-effekt */
+}
+ 
+/* Hover effect for new CTA button */
+.new-cta-button:hover {
+    transform: scale(1.05); /* Let forstørrelse ved hover */
+}
+ 
+/* Pilen i knappen */
+.new-cta-button::after {
+    content: '\2192'; /* Unicode for højre pil (→) */
+    margin-left: 10px; /* Afstand mellem tekst og pil */
+    font-size: 1.3rem; /* Samme størrelse som tekst */
+    vertical-align: middle; /* Sørg for, at pilen er i midten */
+    transform: rotate(-50deg); /* Roter pilen 45 grader for at pege op til højre */
+    display: inline-block; /* Sørger for, at pilen opfører sig som et inline element */
+    line-height: 1.8; /* Justerer linjehøjde for at centrere pilen bedre */
+    margin-top: -3px; /* Juster pilen lidt op */
+ 
+}
+ 
+/* Hover effect for new CTA button */
+.new-cta-button:hover {
+    transform: scale(1.05); /* Let forstørrelse ved hover */
+}
+ 
+/*CSS FOR KONTAKTSIDEN*/
+ 
+.kontakt-section .about-header h2.kontakt-about-header {
+    font-family: 'BaarZeitgeist', sans-serif;
+    font-weight: 300;
+    font-size: 3.4rem;
+    margin-top: 100px; /* Gør afstanden større opad */
+    margin-bottom: 10px;
+    color: #403F3F;
+    text-align: center;
+ 
+}
+ 
+.kontakt-section .about-content {
+    font-family: 'Lato', sans-serif; /* Samme font som øvrige sektioner */
+    font-size: 2.1rem;                /* Tekststørrelse */
+    line-height: 1.8;                /* Linjeafstand */
+    color: #333;                     /* Tekstfarve */
+    margin-top: 20px;                /* Luft over teksten */
+    text-align: left;                /* Venstrejusteret tekst */
+    max-width: 800px;                /* Bredden af teksten */
+    margin-left: auto;               /* Centrer teksten */
+    margin-right: auto;              /* Centrer teksten */
+    margin-bottom: -300px; /* Reducerer afstanden under teksten */
+ 
+}
+ 
+ 
+/* Container for billede og tekst */
+.kontakt-content {
+    display: flex; /* Brug flexbox for at placere elementer side om side */
+    justify-content: space-between; /* Sørg for at der er plads mellem billede og tekst */
+    align-items: flex-start; /* Sørg for, at billeder og tekst er i toppen */
+    margin-top: 20px; /* Tilføj lidt luft mellem overskrift og indhold */
+}
+ 
+/* Styling for billedet "Kindergarten Building Chatgpt" */
+.contact-image {
+    width: 35%; /* Sæt billedet til at fylde 40% af bredden */
+    height: auto; /* Bevar billedets proportioner */
+    margin-right: 20px; /* Giv lidt luft til højre for at adskille billedet fra teksten */
+    position: relative;
+    margin-left: 780px; /* Giv lidt luft til venstre for at adskille billedet fra teksten */
+    top: -270px; /* Flyt billedet lidt op */
+    right: 30px; /* Flyt billedet lidt mod højre */
+    border: 2px solid #006854;
+}
+ 
+/* Styling for tekstindholdet */
+.about-content {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.1rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: left;
+    max-width: 800px;
+}
+ 
+ 
+.logo-container a {
+    display: block;  /* Sørg for, at a-tagget opfører sig som en blok (link) */
+    text-decoration: none; /* Fjern understregningen på linket */
+    z-index: 50;
+}
+ 
+.logo-container a:hover {
+    cursor: pointer;  /* Skift cursoren til en hånd for at indikere, at det er klikbart */
+    z-index: 50;
+}
